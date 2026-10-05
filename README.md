@@ -1,20 +1,21 @@
 # NGS_phylogeography
-[⚡Нажмите чтобы открыть проект в Google Collab!](https://colab.research.google.com/github/LazarevaEvgen/NGS_phylogeography/blob/main/NGS_phylogeography.ipynb)
+[`⚡Press here to open the project in Google Collab!`](https://colab.research.google.com/github/LazarevaEvgen/influenza_phylogeography/blob/main/influenza_phylogeography.ipynb)
 
-Перед вами мини-приложение для оптимизации осуществления филогеографического анализа крупных выборок вируса гриппа. 
+This is a mini-application designed to optimize the phylogeographic analysis of large-scale Influenza virus datasets.
 
-**Для чего подходит этот инструмент?**
+**What is this tool used for?**
 
-1. Устранить избыточность данных - выравнивание в формате fasta группируется по году и локации, и уже в каждой группе осуществляется прореживание с использованием инструмента CD-HIT (DOI: 10.1093/bioinformatics/btl158) с заданным вами порогом идентичности (как вариант, в выставлении порога можно учитывать темп молекулярной эволюции генов, с которыми вы работаете).
+1. **Data Redundancy Elimination:** FASTA alignment sequences are grouped by sampling year and geographic location. Within each group, sequence downsampling is performed using the CD-HIT tool (DOI: 10.1093/bioinformatics/btl158) with a user-specified sequence identity threshold (as an option, the molecular evolution rate of your target genes can be considered when setting this threshold).
 
-2. Построить интерактивную карту и определить зону циркуляции интересующей вас монофилетической группы. Также можно использовать этот инструмент чтобы визуализировать как меняется область выявления вируса по годам. Карту можно скачать в формате html.
+* **Interactive Mapping and Spatiotemporal Visualization:** Construct interactive maps to define the circulation zones of your monophyletic groups/lineages of interest. The tool can also be utilized to visualize annual shifts in virus detection areas. Final maps can be exported and downloaded as standalone HTML files.
 
-Инструкция, допустимые форматы заголовков и стандартные ошибки прописаны в описании к ячейкам кода. Файлы для пробного запуска кода доступны по запросу у авторов. По всем вопросам пишите e.kovaleva2@g.nsu.ru
+*Comprehensive instructions, supported header formats, and common troubleshooting examples are detailed within the descriptions of the respective code cells.*
 
-Пример карты (скриншот):
-<img width="9823" height="3703" alt="g891" src="https://github.com/user-attachments/assets/20021d90-e915-4f85-9c2f-ee3d1de1ca92" />
-Пример выполнения кода для устранения избыточности (скриншот):
-<img width="9945" height="3831" alt="g38-3" src="https://github.com/user-attachments/assets/4fa4d376-8d64-43a1-8d06-52224372682f" />
+Map Example (Screenshot):
+<img width="3032" height="1253" alt="g1355" src="https://github.com/user-attachments/assets/b92c8352-c9ef-4867-afa1-37eb9cfac219" />
+
+Data Downsampling Execution Example (Screenshot):
+<img width="3786" height="1650" alt="g2287" src="https://github.com/user-attachments/assets/687f77c4-2cfc-4513-8191-fa56fe92b6b1" />
 
 
 
